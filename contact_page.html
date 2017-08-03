@@ -8,22 +8,27 @@
 </head>
 <body>
   <ul>
-    <li><a href="index_page3.html">Home</a></li>
+    <li><a href="home_page.html">Home</a></li>
     <li><a href="news.asp">Art</a></li>
     <li><a href="about.asp">About</a></li>
     <li><a class='active' href="contact_page.html">Contact</a></li>
     <li><a href="login.asp">Login</a></li>
   </ul>
   <div class="container">
-    <form action="/contact_page1.php">
-
-    <label for="fname">First Name</label>
-    <input type="text" id="fname" name="firstname" placeholder="Your name..">
-
-    <label for="lname">Last Name</label>
-    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-
-    <label for="country">Country</label>
+  <form id="contact" action="" method="post">
+    <h3>Contact Us</h3>
+    <h4>Contact us today, to answer any of yur questions about using our website to display your art, and get reply with in 24 hours!</h4>
+    <fieldset>
+      <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Your Email Address" type="email" tabindex="2" required>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Your Phone Number" type="tel" tabindex="3" required>
+    </fieldset>
+    <fieldset>
+  <label for="country">Country</label>
     <select id="country" name="country">
       <option value="Afganistan">Afghanistan</option>
 <option value="Albania">Albania</option>
@@ -272,14 +277,15 @@
 <option value="Zaire">Zaire</option>
 <option value="Zambia">Zambia</option>
 <option value="Zimbabwe">Zimbabwe</option>
-
-    </select>
-
-    <label for="comment">Comment</label>
-    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-
-    <input type="submit" value="Send">
+</select required>
+    </fieldset>
+    <fieldset>
+      <textarea placeholder="Type your Message Here...." tabindex="5" required></textarea>
+    </fieldset>
+    <fieldset>
+      <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+    </fieldset>
   </form>
+
+
 </div>
-</body>
-</html>
